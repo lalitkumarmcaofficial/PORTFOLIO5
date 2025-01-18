@@ -13,7 +13,7 @@
     
     // Construct WhatsApp URL
     const phoneNumber = "918218658959"; // Replace with your WhatsApp number (without '+' or spaces)
-    const whatsappURL = `https://wa.me/${phoneNumber}?text=Hello,%20I%20am%20${name}%0AEmail:%20${email}%0ASub:%20${sub}%0A${message}`;
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=Hello,%20I%20am%20${name}%0AEmail:%20${email}%0ASub:%20${sub}%0AMessage:%20${message}`;
     
     // Redirect to WhatsApp
     window.open(whatsappURL, "_blank");
