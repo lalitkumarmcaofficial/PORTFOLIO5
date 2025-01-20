@@ -93,7 +93,7 @@ nav .checkbox i {
 
 ul {
     display: flex;
-    align-items: center;
+    align-items: center; 
     gap: 1rem;
     list-style: none;
     transition: left 0.3s;
@@ -117,6 +117,43 @@ ul li a:hover{
 
 /* NAV SECTION END */
 
+
+/* /* Dark Theme Button */
+/*.theme-toggle {
+    position: fixed;
+    /*bottom: 20px; /* Distance from the bottom of the viewport */
+    /*right: 20px; /* Distance from the right side of the viewport */
+    /*z-index: 1000;  Ensure it stays above other elements */
+    /* font-size: 1rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.theme-toggle:hover {
+    background-color: var(--primary-color-dark);
+} */
+
+/* Dark Theme Styles */
+/* .dark-theme {
+    background-color: #101010;
+    color: #f1f1f1;
+}
+
+.dark-theme nav, .dark-theme .section {
+    background-color: #181818;
+}
+
+.dark-theme .logo a,
+.dark-theme ul li a,
+.dark-theme .section {
+    color: #f1f1f1;
+}  */
 
 /* SECTION  */
 .section{
@@ -238,9 +275,10 @@ ul li a:hover{
     ul {
         position: absolute;
         width: 100%;
-        height: calc(100vh - 85px);
+        height: 100vh;
         left: -100%;
-        top: 85px;
+        top: 30px; 
+        bottom: 0;
         background-color: var(--extra-light);
         flex-direction: column;
         justify-content: center;
@@ -324,7 +362,9 @@ ul li a:hover{
 
 }
 
-
+span{
+    color: #f9004d;
+}
 
 .footer-para{
     /* color: white; */
@@ -406,4 +446,41 @@ ul li a:hover{
         /* background-color: blue; */
         
     }
+}
+
+
+
+/* Scroll-to-Top Button Styles */
+.scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent black */
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    visibility: hidden; /* Initially hidden */
+    opacity: 0;
+    z-index: 1000;
+}
+
+.scroll-top:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid #f9004d;
+    transform: scale(1.1);
+
+}
+
+.scroll-top.show {
+    visibility: visible;
+    opacity: 1;
 }
