@@ -188,6 +188,8 @@ html{
     width: auto;
     background-image: url(./assets/LALIT_1.jpg);
     background-size: cover;
+    background-position: start;
+
   }
 
 
