@@ -186,7 +186,7 @@ html{
 
   .hero{
     width: auto;
-    background: url(./assets/LALIT_1.jpg);
+    background-image: url(./assets/LALIT_1.jpg);
     background-size: cover;
   }
 
